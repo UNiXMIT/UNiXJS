@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        MSTeamsKeepAlive
 // @namespace   Violentmonkey Scripts
-// @match       https://teams.microsoft.com/v2/*
+// @match       https://teams.cloud.microsoft/*
 // @grant       none
 // @version     1.0
 // @author      UNiXMIT
