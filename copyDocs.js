@@ -10,10 +10,13 @@
 // ==/UserScript==
 
 (async function () {
-  const container = await waitForElement('[aria-label="Breadcrumbs"]');
-  if (!container) return;
-
-  addCopyButton(container);
+  let observer = new MutationObserver(mutations => {
+    let crumbsCheck = document.querySelector('[aria-label="Breadcrumbs"]');
+    if (crumbsCheck) {
+      addCopyButton(crumbsCheck);
+    }
+  });
+  observer.observe(document.body, {childList: true, subtree: true});
 })();
 
 function waitForElement(selector, timeout = 15000) {
