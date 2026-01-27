@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        YouTube Redirect
+// @name        YouTubeRedirect
 // @namespace   Violentmonkey Scripts
 // @match       *://www.youtube.com/*
 // @grant       none
